@@ -6,10 +6,9 @@ import java.util.Random;
 
 public class General
 {
-    public static void CalculateSumAndProduct(int numberOne, int numberTwo)
+    public static int calculateSum(int numberOne, int numberTwo)
     {
-        int sum = numberOne + numberTwo;
-        System.out.println(sum);
+        return numberOne + numberTwo;
     }
 
     public int listLenght(int array [])
@@ -30,6 +29,7 @@ public class General
             System.out.println("Student number:" + (i + 1) + ": " + array[i]);
         }
     }
+
 
     public static int missingNumber (int number)
     {
@@ -54,7 +54,20 @@ public class General
         }
         return  listOfNumbers;
     }
+    
+    //Calculates the sum of a list elements.
+    public static int calculateListSum(List<Integer> givenList)
+    {
+        int sum = 0;
+        for (int i: givenList) {
+            sum = sum + i;
+        }
+        return sum;
+    }
 
-
-
+    //Returns the product of two integer numbers
+    public static int productOfTwoNumbers (int a, int b)
+    {
+        return a * b;
+    }
 }
